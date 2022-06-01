@@ -1,0 +1,26 @@
+@import "./base";
+@import "./mixin";
+@import "./variables";
+
+
+// pages
+@import "./pages/home";
+
+@import "./pages/company";
+@import "./pages/partners";
+
+@import "./pages/projectList";
+@import "./pages/projectDetail";
+@import "./pages/greenEnergy";
+
+@import "./pages/contact";
+
+
+//components
+@import "./components/cards";
+@import "./components/footer";
+@import "./components/navbar";
+@import "./components/slider";
+
+// container
+@import "./containers/layout"

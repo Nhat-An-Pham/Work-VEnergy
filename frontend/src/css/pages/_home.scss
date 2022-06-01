@@ -1,0 +1,533 @@
+.Home__container {
+	position: relative;
+	width: 100%;
+	padding-top: 40px;
+	overflow: hidden;
+}
+
+.Home__section__title {
+	position: relative;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 120px;
+
+
+	& h1 {
+		position: relative;
+		width: 90%;
+		height: 50%;
+		font-size: 40px;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px #70b3ab solid;
+	}
+}
+
+.Home__section {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 700px;
+	margin-bottom: 20px;
+	position: relative;
+
+	&__slider {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&__text {
+			width: 50%;
+			position: absolute;
+			font-size: 40px;
+			text-align: center;
+			color: white;
+			opacity: 0;
+		}
+
+		&__hs01 {
+			animation: hs01 18s infinite;
+		}
+
+		&__hs02 {
+			animation: hs02 18s infinite;
+		}
+
+		&__hs03 {
+			animation: hs03 18s infinite;
+		}
+
+		&__hs04 {
+			animation: hs04 18s infinite;
+		}
+	}
+}
+
+
+@keyframes hs01 {
+	0% {
+		opacity: 0;
+	}
+
+	12% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 0;
+	}
+}
+
+@keyframes hs02 {
+	25% {
+		opacity: 0;
+	}
+
+	47% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes hs03 {
+	50% {
+		opacity: 0;
+	}
+
+	62% {
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 0;
+	}
+}
+
+@keyframes hs04 {
+	75% {
+		opacity: 0;
+	}
+
+	87% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+// statistic
+.Home__section__statistic {
+	margin-top: 100px;
+	position: relative;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__wrapper {
+		width: 90%;
+		height: 100%;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__contentContainer {
+		position: relative;
+		height: auto;
+		width: 70%;
+		display: flex;
+		justify-content: center;
+
+		&__box__01 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 20px 0px;
+			flex: 1;
+			aspect-ratio: 2/1;
+			border-right: 2px black solid;
+
+			&__img {
+				flex: 1;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+
+				& img {
+					width: 100%;
+				}
+			}
+
+			&__text__01 {
+				flex: 2;
+				font-size: 25px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				text-align: right;
+				margin-right: 20px;
+			}
+
+			&__text__02 {
+				
+				margin-left: 20px;
+				flex: 2;
+				font-size: 25px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				text-align: left;
+			}
+		}
+		&__box__01:hover{
+			background-color:black;
+			border-top: 2px black solid;
+			border-bottom: 2px black solid;
+			border-radius: 5px;
+			color: white;
+			transition: all .3s ease-in-out;
+		}
+
+		&__box__01:hover .Home__section__statistic__contentContainer__box__01__img{
+			background-color: white;
+		}
+
+		&__box__02 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 20px 0px;
+			flex: 1;
+			aspect-ratio: 2/1;
+			border-left: 2px black solid;
+
+			&__img {
+				flex: 1;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+
+				& img {
+					width: 100%;
+				}
+			}
+
+			&__text__01 {
+				flex: 2;
+				font-size: 25px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				text-align: right;
+				margin-right: 20px;
+			}
+
+			&__text__02 {
+				margin-left: 20px;
+				flex: 2;
+				font-size: 25px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				text-align: left;
+			}
+		}
+		&__box__02:hover{
+			background-color:black;
+			border-top: 2px black solid;
+			border-bottom: 2px black solid;
+			border-radius: 5px;
+			color: white;
+			transition: all .3s ease-in-out;
+		}
+
+		&__box__02:hover .Home__section__statistic__contentContainer__box__02__img{
+			background-color: white;
+		}
+
+	}
+}
+.Home__section__statistic a{
+	color: #000;
+}
+
+
+//on-going section
+.Home__section__ongoing__img {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.Home__section__ongoing img {
+	position: relative;
+	width: 100%;
+	flex: 1;
+	object-fit: contain;
+	border-left: 2px black solid;
+}
+
+.Home__section__ongoing {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 80%;
+
+	&layout {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		height: 100%;
+	}
+
+	&Contain {
+		position: relative;
+		height: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__titleBox {
+		flex: 1;
+		border-left: 2px black solid;
+
+		&__item {
+			height: 60%;
+			display: flex;
+			justify-content: center;
+		}
+
+		&__item h2 {
+			margin-top: 10px;
+			font-size: 20px;
+			width: 90%;
+			height: 50%;
+		}
+
+		&__projectTitle {
+			font-size: 40px;
+			position: relative;
+			height: 20%;
+			width: 100%;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__projectTitle p {
+			width: 80%;
+		}
+		&__projectTitle:hover{
+			transform: scale(1.1);
+			transition: all 0.3s ease-in-out;
+		}
+		
+	}
+}
+
+.Home__section__ongoing__button {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__in {
+		width: 90%;
+		height: 100%;
+
+		& div {
+			height: 100%;
+			width: 50%;
+			border: 2px black solid;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 100%;
+			color: black;
+		}
+	}
+}
+
+.Home__section__ongoing__button__in div:hover {
+	background-color: #f1fbfa;
+	color: black;
+	transition: 0.3s ease-in-out all;
+}
+
+//greenEnergy section
+.Home__section__greenEnergyContain {
+	margin-top: 20px;
+	margin-bottom: 100px;
+	position: relative;
+	height: 500px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.Home__section__greenEnergy__quotes {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0px;
+}
+
+.Home__section__greenEnergy__quotes h2 {
+	width: 90%;
+	font-size: 30px;
+	text-align: center;
+}
+
+
+.Home__section__greenEnergy__wrapper {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	border-right: 2px solid black;
+}
+
+.Home__section__greenEnergy__descriptionBox {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	// align-items: center;
+	
+
+
+	&__textAndButton {
+		flex: 1;
+		height: 80%;
+		font-size: 25px;
+		border-right: 2px black solid;
+
+
+		& p {
+			width: 95%;
+			height: 90%;
+
+		}
+
+		&__button {
+			height: 10%;
+			width: 100%;
+
+			&__in {
+				width: 95%;
+				display: flex;
+				justify-content: flex-end;
+
+
+				& div {
+					width: 40%;
+					height: 100%;
+					border: 1px black solid;
+					text-align: center;
+					
+				}
+			}
+		}
+
+		&__button:hover {
+			color: black;
+		}
+	}
+
+	&__img {
+		flex: 1;
+		height: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+
+		& img {
+			height: 100%;
+		}
+
+		;
+	}
+}
+
+@media only screen and (max-width: 1078px) {
+	.Home__section__greenEnergy__descriptionBox {
+		flex-direction: column-reverse;
+
+		&__textAndButton {
+			margin-top: 20px;
+		}
+
+		&__img {
+			overflow: visible;
+
+			& img {
+				width: 100%;
+			}
+		}
+	}
+
+	.Home__section__greenEnergyContain {
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.Home__section__ongoing{
+		flex-direction: column;
+	}
+	.Home__section__ongoing__titleBox{
+		margin-top: 20px;
+	}
+	.Home__section__ongoingContain{
+		margin-top: 20px;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 788px) {
+	.Home__section__statistic__contentContainer{
+		flex-direction: column;
+	}
+	.Home__section__statistic{
+		height: auto;
+	}
+	.Home__section__ongoing__button{
+		display: none;
+	}
+	.Home__section__greenEnergy__descriptionBox__textAndButton__button{
+		display: none;
+	}
+}

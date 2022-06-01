@@ -1,0 +1,38 @@
+.GreenEnergy__pageTitle{
+    background-image: url('../../assets/image/GreenEnergy/image01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+
+    & h1 {
+        color: #FFFFFF;
+        text-shadow: 3px 5px 2px #474747;
+    }
+}
+
+.greenEnergy__contentContain {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greenEnergy__contentContain p {
+    text-align: left;
+    margin: 0px 30px;
+    font-size: 20px;
+}
+
+.greenEnergy__content__section {
+    position: relative;
+    height: auto;
+    width: 70%;
+    margin: 20px 0px;
+
+    &__slider{
+        width: 70%;
+        height: 400px;
+    }
+}

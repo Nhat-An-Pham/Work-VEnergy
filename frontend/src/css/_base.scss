@@ -1,0 +1,58 @@
+/* import font */
+/* Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+/* monsterat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+$default-font: "montserrat", san-serif;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    list-style-type: none;
+    user-select: none;
+}
+
+a{
+    color: black;
+}
+
+html {
+    font-size: 13px;
+    font-family: $default-font;
+    scroll-behavior: smooth;
+}
+
+.page__container{
+    position: relative;
+    padding-top: 80px;
+    width: screen(width);
+    height: auto;
+    
+}
+.page__title{
+    position: relative;
+    height: 180px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h1{
+        font-size: 60px;
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 10;
+    }
+    & img{
+        height: 100%;
+        position: absolute;
+        opacity: 0.60;
+    }
+}

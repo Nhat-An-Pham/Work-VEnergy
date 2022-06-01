@@ -1,0 +1,64 @@
+.ProjectDetail__container {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectDetail__titleBox {
+    height: 100%;
+    width: 100%;
+    margin: 50px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectDetail__titleBox h1 {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.ProjectDetail__bodyBox {
+    width: 90%;
+    display: flex;
+
+    &__item {
+        font-size: 25px;
+        flex: 1;
+
+        &__desc {
+            display: block;
+            height: auto;
+            width: auto;
+            margin: 10px;
+        }
+
+        &__stats {
+            margin: 10px;
+        }
+    }
+
+    &__item img {
+        width: 100%;
+        box-shadow: 10px 10px 19px -2px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 10px 10px 19px -2px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 10px 10px 19px -2px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .ProjectDetail__bodyBox{
+        flex-direction: column-reverse;
+        align-items: center;
+        &__item{
+            margin-top: 30px;
+        }
+    }
+}
