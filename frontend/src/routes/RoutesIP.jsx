@@ -13,6 +13,10 @@ import GreenEnergy from '../pages/GreenEnergy'
 import TradingList from '../pages/TradingList'
 import TradingDetail from '../pages/TradingDetail'
 
+//Admin
+import Login from '../pages/Login'
+import Admin from '../pages/Admin'
+
 // Contact
 import Contact from '../pages/Contact'
 
@@ -33,6 +37,10 @@ const RoutesIP = () => {
             <Route path='/Projects/GreenEnergy' exact element={<GreenEnergy />} />
             <Route path='/Projects/Trading' exact element={<TradingList/>}/>
             <Route path='/Projects/Trading/:id' exact element={<TradingDetail/>}/>
+
+            {/* Admin Page */}
+            <Route path='/Login' exact element={<Login/>}/>
+            <Route path='/Login/Admin' exact element={<Admin/>}/>
 
             {/* Contact */}
             <Route path='/Contact' exact element={<Contact />} />

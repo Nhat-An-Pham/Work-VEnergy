@@ -47,6 +47,13 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+        <div className='Navbar__dropdown'>
+          <Link to="/Login">
+            <div className='navbar__adminBtn'>
+              <p>Admin</p>
+            </div>
+          </Link>
+        </div>
         <div className='navbar__languageIconDropDown'>
           <select value={context.locale} onChange={context.selectLang}>
             <option value="vi-Vn">Vietnamese</option>
@@ -98,11 +105,11 @@ const Navbar = () => {
           </Link>
 
           <div className='navbar__languageIconDropDown'>
-          <select value={context.locale} onChange={context.selectLang}>
-            <option value="vi-Vn">Vietnamese</option>
-            <option value="en-Us">English</option>
-          </select>
-        </div>
+            <select value={context.locale} onChange={context.selectLang}>
+              <option value="vi-Vn">Vietnamese</option>
+              <option value="en-Us">English</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>

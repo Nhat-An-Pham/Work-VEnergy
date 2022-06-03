@@ -10,7 +10,7 @@ app.use(express.json()); //req.body
 //DB ROUTES
 
 //get login
-app.get("/login/:admin", async (req, res) => {
+app.get("/login/admin", async (req, res) => {
     try {
         const { inputId } = req.params;
         const { inputPass } = req.params;
@@ -34,16 +34,16 @@ app.get("/login/admin", async (req, res) => {
 
 //Get 1 project
 app.get("/login/admin/:id", async (req, res) => {
-    try {
-        const { inputId } = req.params;
-        const { inputPass } = req.params;
-        const project = await pool.query("SELECT * FROM tblUser where userID = '$1' AND password = '$2'", [inputId, inputPass]);
+        try {
+            const { inputId } = req.params;
+            const { inputPass } = req.params;
+            const project = await pool.query("SELECT * FROM tblUser where userID = '$1' AND password = '$2'", [inputId, inputPass]);
 
-        res.json(project.rows[0]);
-    } catch (err) {
-        console.error(err.message);
-    }
-})
+            res.json(project.rows[0]);
+        } catch (err) {
+            console.error(err.message);
+        }
+    })
 
 //Put 1 project
 
